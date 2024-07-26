@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: brown;
+        height: 400px;
+      }
+      .box {
+        /*là thẻ con của body*/
+        background-color: blue;
+        width: 60%;
+        height: 50%; /*chiều cao bằng 1 nữa thẻ cha(body=200)*/
+      }
+      .box_child {
+        /*là thẻ con của box*/
+        background-color: yellow;
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      Box 1
+      <div class="box_child">Box con</div>
+    </div>
+  </body>
+</html>

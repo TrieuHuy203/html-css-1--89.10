@@ -1,0 +1,14 @@
+/*chọn tất cả*/
+* {
+  color: red;
+  font-size: 24px;
+}
+
+/*CHỉ thẻ h2 có class = demo mới bị đổi*/
+h2.demo {
+  color: aquamarine;
+}
+
+p.title {
+  color: pink;
+}

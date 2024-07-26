@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        font-size: 1.5rem;
+      }
+      body {
+        margin: 0;
+      }
+      .container {
+        height: 300px;
+        display: flex; /*cho các block nằm ngang */
+        background-color: cyan;
+        justify-content: space-evenly;
+        /*align-items căng theo chiều dộc*/
+        align-items: stretch; /*mặc định không có gì hết/ or kéo giản ra*/
+        align-items: flex-start; /*chỉ có box1 có chiều cao là 200 do dc định nghĩa còn tất cả các block còn lại thì quay về mặc định và dồn lên cao phía trên*/
+        align-items: flex-end; /*chỉ có box1 có chiều cao là 200 do dc định nghĩa còn tất cả các block còn lại thì quay về mặc định và dồn xuống phía dưới*/
+        align-items: center; /*chỉ có box1 có chiều cao là 200 do dc định nghĩa còn tất cả các block còn lại thì quay về mặc định và dồn ở giữa*/
+        align-items: baseline;
+      }
+      .box {
+        background-color: red;
+      }
+      .box1 {
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box1">B;ocl 1</div>
+      <div class="box box2">B;ocl 2</div>
+      <div class="box box3">B;ocl 3</div>
+      <div class="box box4">B;ocl 4</div>
+      <div class="box box5">B;ocl 5</div>
+    </div>
+  </body>
+</html>

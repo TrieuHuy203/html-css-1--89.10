@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: aqua;
+      }
+      a {
+        /* thẻ a là thẻ inline nên không áp dụng được
+        1 - padding-top, padding-bottom
+        2 - margin-top, margin-bottom
+        3 - width,height,min-width,min-height*/
+        margin-top: 30px;
+        text-decoration: none; /*loại bỏ gạch chân*/
+        background-color: palevioletred;
+        border-radius: 999px; /*bo cong*/
+        color: black; /*màu chữ*/
+        width: 100px;
+        padding: 8px 16px;
+        text-align: center;
+        display: inline-block;
+      }
+      a:hover {
+        background-color: black; /* đổi màu nền thành màu đen*/
+        color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="http://tuhoc.cc">click 1</a>
+    <a href="http://tuhoc.cc">click 2</a>
+  </body>
+</html>

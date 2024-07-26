@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        font-size: 1.5rem;
+      }
+      .container {
+        display: flex; /*chiếm hết chiều ngang của thẻ cha nó*/
+        background: cyan;
+        /*justify-content: ; căng các  phần tử theo trục ngang*/
+
+        justify-content: flex-start; /*giá trị mặc định*/
+        justify-content: flex-end; /*các item dồn về phía cuối khối box và giử nguyên vị trí*/
+        justify-content: center; /*các item dồn về  giữa khối box*/
+        justify-content: space-between; /*các khoản cách của các item là bằng nhau và 2 item đầu và cuối sát lề*/
+
+        justify-content: space-around; /*khoản trắng xung quanh mỗi phần tử là bằng nhau*/
+
+        justify-content: space-evenly; /*cách đều nhau cách cả lề*/
+      }
+      .box {
+        background: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box1">B;ocl 1</div>
+      <div class="box box2">B;ocl 2</div>
+      <div class="box box3">B;ocl 3</div>
+      <div class="box box4">B;ocl 4</div>
+      <div class="box box5">B;ocl 5</div>
+    </div>
+  </body>
+</html>

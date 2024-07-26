@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*chưa sửa dụng biến nếu muốn sửa sẽ rất cực vì phải sửa từng  chỗ*/
+      .box1 {
+        height: 100px;
+        background-color: #0f0;
+        margin-bottom: 10px; /*tạo khoản cách phía trên*/
+      }
+      .box2 {
+        height: 100px;
+        background-color: #0f0;
+        margin-bottom: 10px; /*tạo khoản cách phía trên*/
+      }
+      .box3 {
+        height: 100px;
+        background-color: #0f0;
+        margin-bottom: 10px; /*tạo khoản cách phía trên*/
+      }
+
+      /*sử dụng biến để có gì sửa cả 3 box sẽ tiện hơn : cú pháp  --tên-biến*/
+
+      :root {
+        --box-height: 100px;
+        --box-color: red;
+      }
+      .box1 {
+        height: var(--box-height);
+        background-color: var(--box-color);
+        margin-bottom: 10px; /*tạo khoản cách phía trên*/
+      }
+      .box2 {
+        height: var(--box-height);
+        background-color: var(--box-color);
+        margin-bottom: 10px; /*tạo khoản cách phía trên*/
+      }
+      .box3 {
+        height: 100px;
+        background-color: #0f0;
+        margin-bottom: 10px; /*tạo khoản cách phía trên*/
+      }
+      .detail {
+        --p_font-size: 30px;
+        font-size: var(--p_font-size);
+      }
+
+      /*biến backup*/
+
+      .contain {
+        --background-box: red;
+      }
+      .box4 {
+        height: 100px;
+        background-color: var(--background-box, purple);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <div class="box1">Box 1</div>
+      <div class="box2">Box 2</div>
+      <div class="box3">Box 3</div>
+      <p class="detail">
+        chào mừng đến <span>Tuhoc.cc</span> cộng đồng tự học VN
+      </p>
+      <div class="box4">Box 4</div>
+    </div>
+  </body>
+</html>

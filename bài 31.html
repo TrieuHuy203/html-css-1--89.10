@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 + h2 {
+        color: rebeccapurple;
+      }
+
+      /*chọn thẻ h3 đứng sát ngay sao class demon*/
+      .demon + h3 {
+        color: blue;
+      }
+      /*chọn tất cả thẻ h4 đứng sau thẻ h1 thành màu red*/
+      h1 ~ h4 {
+        color: red;
+      }
+      /*chọn các phần tử đứng sau thẻ h2 có class là table thành màu pink*/
+      h2 ~ .table {
+        color: pink;
+      }
+      h3 ~ div {
+        color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Lorem, ipsum dolor.</h1>
+    <h2>Lorem, ipsum dolor.</h2>
+    <h3 class="demon">Lorem, ipsum dolor.</h3>
+    <h3 class="demon demon3">Lorem ipsum dolor sit.</h3>
+    <h3>Lorem, ipsum.</h3>
+    <p class="table">Đoạn văn 1</p>
+    <p class="table">Đoạn văn 2</p>
+    <p>Đoạn văn 3</p>
+    <h4>Nội dung 1</h4>
+    <h4>Nội dung 2</h4>
+    <h4>Nội dung 3</h4>
+    <h4>Nội dung 4</h4>
+    <h4>Nội dung 5</h4>
+    <div>
+      <h5>chúc bạn học tốt</h5>
+    </div>
+  </body>
+</html>

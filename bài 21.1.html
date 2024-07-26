@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- bài 21:Table-->
+    <table>
+      <thead>
+        <tr>
+          <th>Tên Sản Phẩm</th>
+          <th>Giá</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Áo phông</td>
+          <td>20.000đ</td>
+        </tr>
+
+        <tr>
+          <td>Áo len</td>
+          <td>60.000đ</td>
+        </tr>
+
+        <tr>
+          <td>Áo coat</td>
+          <td>90.000đ</td>
+        </tr>
+
+        <tfoot>
+            <tr>
+                <td>Tổng cộng</td>
+                <td>170.000đ</td>
+            </tr>
+        </tfoot>
+      </tbody>
+    </table>
+
+
+    <!--bài 21.2: tối ưu hóa bố cục bảng-->
+    <table>
+        <tr>
+            <th>Tên Sản Phẩm</th>
+            <th colspan="2">Mô tả</th>
+        </tr>
+
+        <tr>
+            <td rowspan="2">Bag</td>
+            <td>10.000.000đ</td>
+            <td>Chất liệu: da</td>
+        </tr>
+
+        <tr>
+            <td>Kích thước</td>
+            <td>X,XL,M</td>
+        </tr>
+
+        <tr>
+            <td>Quần Jean</td>
+            <td colspan="2">Quần Jean cao cấp, phối được với mọi loại đồ</td>
+        </tr>
+    </table>
+<!--bài tập-->
+<table>
+    <thead>
+    <tr>
+        <th>Tên sản phẩm</th>
+        <th>Giá sản phẩm</th>
+        <th>Số lượng còn lại</th>
+    </tr>
+</thead>
+
+<tbody>
+    <tr>
+        <td>Áo thun nam</td>
+        <td>100.000vnd</td>
+        <td>50</td>
+    </tr>
+
+    <tr>
+        <td>Áo jean nữ</td>
+        <td>200.000vnd</td>
+        <td>20</td>
+    </tr>
+
+    <tr>
+        <td>Giầy thể thao</td>
+        <td>300.000vnd</td>
+        <td>30</td>
+    </tr>
+
+</tbody>
+
+<tfoot>
+    <tr>
+        <td>Remark</td>
+        <td colspan="2">Chỉ thống kê sản phẩm trong kho</td>
+    </tr>
+</tfoot>
+
+
+</table>
+  </body>
+</html>

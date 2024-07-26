@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /*cú pháp viết tắt*/
+      /* background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit; */
+      .box {
+        width: 200px;
+        height: 200px;
+        border: 50px dotted red;
+        padding: 50px;
+        background-color: cyan;
+
+        background-image: url(./img/images.jpg);
+        /*Background - position: Vị trí bắt đầu đặt ảnh*/
+        /* background-position: top left;
+        background-position: top right;
+        background-position: bottom left;
+        background-position: bottom right;
+        background-position: left;
+        background-position: right;
+        background-position: bottom;
+        background-position: center; */
+
+        /*background-position: Đơn vị %*/
+        /*  background-position: 0 100%; */
+        /*background-position: đơn vị tuyệt đối*/
+        /* background-position: 0 100px; */
+
+        /*background-size: mặc định hiển thị hình ảnh theo kích thước thật, tỷ lệ 1:1*/
+
+        /* background-size: contain; /*cong thừa khoản trống nào thì nó lặp lại*/
+        /* background-size: cover;*/ /*giản ảnh và phần thiếu thì nó sẽ cắt bớt*/
+
+        /*background-repeat: thể hiện ảnh có lặp lại hay không*/
+        /*  background-repeat: no-repeat; /*ảnh không lặp lại*/
+        /*background-repeat: repeat;
+
+        /*background-origin xác định gốc của bức ảnh đặt ở vị trí nào*/
+        /*   background-origin: padding-box;
+        background-origin: border-box;
+        background-origin: content-box;*/
+
+        /*background-clip: ảnh đồ từ vùng nào*/
+        background-clip: border-box;
+        /*ảnh đỗ từ padding hất vào trong*/
+        background-clip: padding-box;
+        /*ảnh dỗ phần content*/
+        background-clip: content-box;
+
+        /*viết tắt*/
+        /* background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit; */
+        background: red;
+        background: red url(./img/images.jpg);
+        background: red url(./img/images.jpg) left;
+        background: red url(./img/images.jpg) left/contain;
+        background: red url(./img/images.jpg) left/contain no-repeat;
+        background: red url(./img/images.jpg) left/contain no-repeat padding-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>

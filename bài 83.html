@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p::first-line {
+        /*chọn dòng đầu tiên của thẻ p*/
+        color: red;
+      }
+
+      p::first-letter {
+        /*tác động lên chữ cái đầu của các thẻ p*/
+        font-size: 40px;
+        color: blue;
+      }
+      p::selection {
+        /*bôi đen*/
+        background-color: brown;
+        color: #fff;
+      }
+      li::marker {
+        /*tác động lên thẻ li*/
+        font-size: 40px;
+        color: red;
+      }
+
+      .box::before {
+        /*thêm ở đằng trước */
+        content: "Em ở đằng trước nè";
+      }
+
+      .box::after {
+        /*thêm ở đằng sau*/
+        content: "Em ở đằng sau nè";
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci
+        dolores dignissimos, laudantium doloribus delectus harum quia autem
+        inventore. Possimus omnis unde molestiae optio veniam tempore
+        perspiciatis deserunt magnam earum ad. Veniam similique sint doloremque
+        iste ipsa, aliquam consectetur nihil hic voluptates maxime sequi
+        tempora! Non ex maiores, natus atque qui nemo nostrum hic consequuntur
+        minus, voluptas quibusdam numquam sit cum. Perspiciatis mollitia iusto
+        eveniet voluptatem cum nisi dolor consequuntur laboriosam dolorem nemo
+        quos inventore culpa quam quae commodi odio beatae, corporis fugit animi
+        doloribus ipsam vel accusamus vitae itaque. Deleniti. Ea optio dolore
+        amet mollitia rem aliquam nulla id sit libero, veniam soluta aspernatur
+        totam nihil quidem impedit cumque rerum, explicabo at. Laboriosam itaque
+        alias sapiente asperiores, repellat quos vero? Aliquid eveniet fugiat
+        enim. Saepe veniam est non libero impedit, quos ab quae natus modi aut
+        quis, minima, cupiditate voluptatibus eligendi perferendis blanditiis.
+        Ratione labore veniam accusamus animi obcaecati repudiandae! Facere,
+        similique cumque dolore alias at placeat veniam minima ducimus maiores
+        ipsum eum odit, vitae iste labore dolor saepe. Obcaecati maiores
+        possimus vel fugit nesciunt deserunt quibusdam. Aut, aliquid eum.
+        Accusamus ex numquam incidunt eveniet, velit repudiandae inventore sunt?
+        Consequuntur dolores enim nisi veniam repellendus voluptatem voluptates
+        similique, necessitatibus minima eligendi ut, asperiores provident
+        explicabo distinctio molestias quasi et sunt! Rerum quia consequatur rem
+        dolores aut pariatur, impedit amet nam itaque, odit sapiente nesciunt
+        obcaecati ducimus, ad optio deserunt doloribus omnis vitae saepe
+        consequuntur sed! Magnam veniam vero alias illo. Autem et reprehenderit
+        unde officia veniam excepturi ipsam consequuntur, nemo vero laboriosam
+        quod maiores, quia architecto odio laborum minima illum ullam
+        consequatur adipisci expedita atque? Blanditiis vitae dolorem a eius!
+        Cum voluptates facilis exercitationem et optio dolore facere temporibus.
+        Itaque quasi praesentium placeat alias corporis recusandae, a possimus
+        nam et eius commodi quia veniam impedit porro nihil cum consequuntur in?
+      </p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <ul>
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+      </ul>
+    </div>
+  </body>
+</html>

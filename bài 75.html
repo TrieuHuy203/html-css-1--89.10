@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        background-image: url(./img/images.jpg);
+        border: 50px dotted red;
+        padding: 50px;
+        background-clip: border-box;
+        background-clip: padding-box; /*dỗ từ padding trở vào*/
+        background-clip: content-box; /*đỗ từ phần nội dung*/
+      }
+      @supports (background-clip: text;) or (-webkit-background-clip: text) { /*xem coi có hổ trợ không*/
+        .text_hl {
+          color: transparent;
+          background-color: blueviolet;
+          background-clip: text;
+          -webkit-background-clip: text;
+          background-color: #4158d0;
+          background-image: linear-gradient(
+            43deg,
+            #4158d0 0%,
+            #c850c0 46%,
+            #ffcc70 100%
+          );
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <h1>
+      Welcome to <strong class="text_hl">tuhoc.cc</strong> kênh học lập trình
+      cho người mới
+    </h1>
+  </body>
+</html>

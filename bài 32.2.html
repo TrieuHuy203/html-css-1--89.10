@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*chỉ chọn những phần tử có giá trị là "tuhoc.cc"*/
+      [title~="tuhoc.cc"] {
+        color: red;
+      }
+
+      /*chọn tất cả các phần tử có từ pic*/
+      [title*="pic"] {
+        color: green;
+      }
+      /*chọn phần tử cso giá trị bắt đầu bằng từ pic*/
+      a[title|="pic"] {
+        color: blueviolet;
+      }
+
+      /*chọn tất cả các thuộc tính bắt đầu bằng từ pic không quan tâm space hay từ nối*/
+
+      [title^="pic"] {
+        color: aqua;
+      }
+      /*=chọn tất cả các thuộc tính kết thúc bằng ký tự 4*/
+      [title$="4"] {
+        font-size: 45px;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="http://tuhoc.cc" title="tuhoc.cc trang chủ">Clink 1</a>
+    <a href="http://tuhoc.cc" title="tuhoc.ccptrang chủ">Clink 2</a>
+    <a href="http://tuhoc.cc">Clink 3</a>
+
+    <a href="http://tuhoc.cc" title="picpro">Clink vào em đi 1</a>
+    <a href="http://tuhoc.cc" title="picpro">Clink vào em đi2</a>
+    <a href="http://tuhoc.cc" title="pic34">Clink vào em đi 3</a>
+
+    <a href="" title="pic-pro">Hello 1</a>
+    <a href="" title="picbro-pro">Hello 2</a>
+    <a href="" title="pic-pro">Hello 3</a>
+    <a href="" title="pic45-pro">Hello 4</a>
+
+    <a href="" title="pic_pro">hello</a>
+    <a href="" title="pic pro">hello</a>
+
+    <a href="" title="pic-h">Tôi là 1</a>
+    <a href="" title="pic_g">Tôi là 2</a>
+    <a href="" title="pic s">Tôi là 3</a>
+    <a href="" title="picsse">Tôi là 4</a>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        padding: 30px;
+        background-color: red;
+        color: yellow;
+        /*code bài 41*/
+        border: 10px inset blue;
+      }
+      #thank {
+        width: 200px;
+        height: 200px;
+        padding: 50px;
+        border-top: 30px solid yellow;
+        border-bottom: 20px double black;
+        border-left: 10px dotted blue;
+        border-right: 50px dashed palegreen;
+      }
+      .demo {
+        width: 100px;
+        height: 100px;
+        padding: 100px;
+        background-color: blue;
+
+        border-width: 10px 20px 30px 40px; /*nguyên tắc giống như padding*/
+        border-style: solid;
+        border-color: black;
+        /*có thể làm như này*/
+        border-width: 10px 20px 30px 40px; /*nguyên tắc giống như padding*/
+        border-style: solid dashed double dotted;
+        border-color: black rebeccapurple red yellow;
+        /*Bo góc*/
+        border-radius: 30px; /*cả 4 góc*/
+        border-top-left-radius: 50px; /*góc trên bên trái*/
+        border-top-right-radius: 100px; /*góc trên bên phải*/
+        border-bottom-left-radius: 20px; /*góc dưới bên trái*/
+
+        /*trên trái,dưới phải -- trên phải, dưới trái*/
+        border-radius: 30px 50px;
+
+        /*trên trái -- trên phải, dưới trái -- dưới phải*/
+        border-radius: 30px 50px 70px;
+
+        /*trên trái -- trên phải -- dưới phải -- dưới trái*/
+        border-radius: 10px 20px 30px 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--bài 41 : CSS border-->
+    <div>Hello word</div>
+    <div id="thank">Tôi là Triệu</div>
+    <div class="demo"></div>
+  </body>
+</html>

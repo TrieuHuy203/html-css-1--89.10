@@ -1,0 +1,12 @@
+body {
+  background-image: url(./img/anhdog.jpg);
+}
+
+h2 {
+  opacity: 50%; /*quy định độ trong suốt*/
+  background-color: blue;
+}
+
+h4 {
+  display: none;
+}

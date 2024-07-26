@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*Nếu như có gì đó tác động đến trạng thái của img này thì nó sẽ bị delay*/
+      /*hay nói cách khác là hiệu ứng */
+      img {
+        transition: 1.5s;
+      }
+
+      /*khi cick vào ô input thì sẽ chọn tất cả các phần tử img */
+      input:checked ~ img {
+        /*1. biến mất khỏi giao diện và mất luôn vị trí không gian*/
+        /*display: none;*/
+        /*2. biến mất khỏi giao diện nhưng vẫn chiến vị trí không gian*/
+        /*visibility: hidden;*/
+
+        /*cho hình ảnh mờ đi, còn tương tác được*/
+        /* opacity: 0;*/
+
+        /*mờ đi và không tương tác được*/
+        opacity: 0;
+        visibility: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Opacity - display - visibility</h1>
+    <input type="checkbox" /> Click vào em đi <br />
+    <img src="/img/anhhoa.jpg" alt="Đây là ảnh hoa" />
+    <p>nội dung phía sau cảu trang</p>
+    <p>cả hai thứ bạn nên tiết kiện đó là sức khỏe và lời hứa</p>
+    <p>cả hai thứ bạn phải cho đi đó là lòng tốt và tri thức</p>
+    <p>cả hai thứ bạn phải thay đổi đó là bản thân và nhận thức</p>
+  </body>
+</html>

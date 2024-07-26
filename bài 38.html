@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*tác động đến tất cả các thẻ có class là top nhưng trừ thẻ p ra*/
+      .top:not(p) {
+        background-color: yellow;
+      }
+      /*trừ thẻ đầu tiên*/
+      .item:not(:first-of-type) {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="top">Tuhoc.cc</h1>
+    <p class="top">Tự học lập trình</p>
+    <h2 class="top">Tuhoc.cc tiêu đề 2</h2>
+
+    <div>
+      <h1 class="item">Tuhoc.cc</h1>
+      <p class="item">Tự học IT 1</p>
+      <p class="item">Tự học IT 2</p>
+      <p class="item">Tự học IT 3</p>
+      <h2 class="item">ôi tuyệt vời quá</h2>
+    </div>
+  </body>
+</html>

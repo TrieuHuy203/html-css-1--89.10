@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background: #fff;
+        /*cân giữa text ở các khối*/
+        display: flex;
+        /*cắn theo chuyền ngang*/
+        justify-content: center;
+        /*cân giữa theo chiều dọc*/
+        align-items: center;
+      }
+      .content {
+        background: cyan;
+        width: 400px;
+        margin: 40px;
+      }
+      .box1 {
+        background: red;
+      }
+      .box2 {
+        background: blue;
+        position: absolute; /*khối 2 đã đc đẩy lên 1 tầng mới nằm ở phía trên và khối 3 dc thế chỗ cũ của khối 3 nói cách khác là khối 2 đang đè lên khối 3 */
+        left: 0;
+        top: 0;
+      }
+      .box3 {
+        background: green;
+      }
+      h1 {
+        background: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <div class="box box1">Khối 1</div>
+      <div class="box box2">Khối 2</div>
+      <div class="box box3">Khối 3</div>
+    </div>
+    <h1>bài 87.2</h1>
+  </body>
+</html>

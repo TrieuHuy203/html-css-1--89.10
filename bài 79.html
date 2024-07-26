@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        margin: 0 auto; /*tự động căn giữa*/
+        width: 200px;
+        height: 200px;
+        background: url(./img/6-nhung-chu-cho-meo-noi-tieng-nhat-the-gioi--2--1518793211-width600height641.webp)
+          center/cover;
+        clip-path: circle(50%); /*hiển thị hình tròn*/
+        clip-path: circle(50% at 0 0); /*bán kính at x y*/
+        clip-path: inset(20px 50px); /*trên dưới, trái phải*/
+        clip-path: inset(20px 50px 80px); /*trên, trái phải, dưới*/
+        clip-path: inset(20px 50px 80px 30px); /*cắt ảnh: trêm phải dưới trái*/
+
+        clip-path: inset(20px round 15px); /*round là bo góc*/
+        clip-path: inset(20px round 15px 50px 80px 15px); /*round là bo góc*/
+
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+        border-radius: 15px; /*bo góc*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>

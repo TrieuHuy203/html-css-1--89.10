@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        background-color: cyan;
+        border: 1px solid black;
+      }
+      .container {
+        height: 200px;
+        display: flex;
+        background-color: yellow;
+        flex-direction: row; /*mặc định không có gì thay đổi*/
+        flex-direction: row-reverse; /*các block dời về sát lề bên phải theo chiều ngang và nó đảo ngược vị trí lại*/
+
+        flex-direction: column; /**/
+        flex-direction: column-reverse;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box1">Block 1</div>
+      <div class="box box2">Block 2</div>
+      <div class="box box3">Block 3</div>
+      <div class="box box4">Block 4</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*chọn thẻ p là thẻ con đầu tiên*/
+      p:first-child {
+        color: red;
+        font-size: 30px;
+      }
+      /*chọn phần tử p là con cuối cùng*/
+      p:last-child {
+        color: aqua;
+      }
+
+      /*chọn thẻ p thứ 3 từ trên xuống*/
+      p:nth-child(3) {
+        color: blue;
+
+        font-size: 40px;
+      }
+      /*thay đổi các thẻ h3 có vị trí là số chẳn*/
+      h3:nth-child(even) {
+        color: blueviolet;
+      }
+      h3:nth-child(odd) {
+        color: brown;
+      }
+      /*
+      n=0 -> 1
+      n=1 -> 4
+      n=2 -> 6
+      ....
+      */
+      /*chọn thẻ h2 vị trí số 2, 4*/
+      h2:nth-child(2n + 2) {
+        color: yellow;
+      }
+
+      /*chọn thẻ h6 vọ trí thứ 2 từ dưới lên*/
+      h6:nth-last-child(2) {
+        color: red;
+      }
+      h1:only-child {
+        color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>Đoạn 1</p>
+      <p>Đoạn 2</p>
+      <p>Đoạn 3</p>
+    </div>
+
+    <div class="demo">
+      <p>Nội dung 1</p>
+      <p>Nội dung 2</p>
+      <p>Nội dung 3</p>
+      <p>Nội dung 4</p>
+    </div>
+
+    <div>
+      <h3>Item 1</h3>
+      <h3>Item 2</h3>
+      <h3>Item 3</h3>
+      <h3>Item 4</h3>
+      <h3>Item 5</h3>
+      <h3>Item 6</h3>
+    </div>
+
+    <div>
+      <h2>Class 1</h2>
+      <h2>Class 2</h2>
+      <h2>Class 3</h2>
+      <h2>Class 4</h2>
+      <h2>Class 5</h2>
+    </div>
+    <div>
+      <h6>Phần tử 1</h6>
+      <h6>Phần tử 2</h6>
+      <h6>Phần tử 3</h6>
+      <h6>Phần tử 4</h6>
+      <h6>Phần tử 5</h6>
+      <h6>Phần tử 6</h6>
+      <h1></h1>
+    </div>
+    <div>
+      <h1>Tôi là duy nhát</h1>
+    </div>
+  </body>
+</html>

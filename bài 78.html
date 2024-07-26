@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background: url(./img/pexels-photo-719396.jpeg);
+        background-size: cover;
+      }
+      .box {
+        background-color: rgba(46, 6, 6, 0.11);
+        height: 100px;
+      }
+
+      @supports (backdrop-filter: blur(5px) contrast(50%)) or
+        (-webkit-backdrop-filter: blur(5px) contrast(50%)) {
+        .box {
+          background-color: rgba(255, 0, 0, 0.363);
+          height: 100px;
+          margin-top: 50px;
+          backdrop-filter: blur(5px) contrast(50%);
+          -webkit-backdrop-filter: blur(5px) contrast(50%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>

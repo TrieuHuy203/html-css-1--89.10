@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        height: 150px;
+        display: flex;
+        background-color: cyan;
+        align-items: flex-start;
+      }
+      .box {
+        background-color: blue;
+        border: 1px solid black;
+      }
+      .box2 {
+        /*align-self căn theo chiều dộc*/
+        align-self: center; /*viết trong thẻ con và tác động lên 1 thẻ */
+        align-self: flex-end; /*di chuyển sát lề phái dưới*/
+      }
+      .box1,
+      .box5 {
+        /*chọn box 1 và 5*/
+        align-self: flex-end;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box1">Block 1</div>
+      <div class="box box2">Block 2</div>
+      <div class="box box3">Block 3</div>
+      <div class="box box4">Block 4</div>
+      <div class="box box5">Block 5</div>
+      <div class="box box6">Block 6</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        height: 150px;
+        display: flex;
+        background-color: cyan;
+        /* overflow: auto; */
+      }
+      .box {
+        background-color: blue;
+        border: 1px solid black;
+        width: 30%;
+        flex-shrink: 0; /*độ co lại cuẩ box khi kéo trình duyệt*/
+      }
+      .box1 {
+        flex-shrink: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box boix1">
+        block 1 Lorem ipsum dolor sit amet consectetur adipisicing elit..
+      </div>
+      <div class="box boix2">block 2</div>
+      <div class="box boix3">block 3</div>
+      <div class="box boix3">block 3</div>
+      <div class="box boix3">block 3</div>
+      <div class="box boix3">block 3</div>
+    </div>
+  </body>
+</html>

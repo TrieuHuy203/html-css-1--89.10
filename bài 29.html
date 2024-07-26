@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="bai28.css" />
+    <style>
+      h1,
+      li {
+        color: blue;
+      }
+      /*chọn thẻ h4 và tất cả các phần tử có class là item_1*/
+      h4,
+      .item_1 {
+        color: black;
+      }
+      /*chọn h5 và phần tử có id là title_1*/
+      h5,
+      #title_1 {
+        color: blueviolet;
+      }
+      .class {
+        font-size: 60px;
+      }
+      /*tác động đến phần tử mà class có 2 tên*/
+      .class1.class2 {
+        color: palevioletred;
+        font-size: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Tiêu đề</h1>
+    <h2>Tiêu đề nhỏ 1</h2>
+    <h2>Tiêu đề nhỏ 2</h2>
+    <h2>Tiêu đề nhỏ 3</h2>
+    <h2>Tiêu đề nhỏ 4</h2>
+    <h2>Tiêu đề nhỏ 5</h2>
+    <h3 class="item_1">Item 1</h3>
+    <h3 class="item_1">Item 2</h3>
+    <h3>Item 3</h3>
+    <h4>Item 4</h4>
+    <h5>Item 5</h5>
+    <p>Đoạn văn 1</p>
+    <p>Đoạn văn 2</p>
+    <p>Đoạn văn 3</p>
+
+    <ul>
+      <li class="class">Nội dung 1</li>
+      <li class="class">Nội dung 2</li>
+      <li class="class1 class2">Nội dung 3</li>
+    </ul>
+
+    <!--bài tập-->
+
+    <p>Đoạn văn 1</p>
+    <p>Đoạn văn 2</p>
+    <p><u>Chung tay xây dựng cộng đồng Tuhoc.cc</u></p>
+    <ul>
+      <li>Phần mục 1</li>
+      <li>Phần mục 2</li>
+      <li>
+        Phần mục 3
+        <ul>
+          <li>Chương 1</li>
+          <li id="title_1">Chương 2</li>
+          <li>Chương 3</li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>
